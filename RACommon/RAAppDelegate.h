@@ -3,7 +3,10 @@
 //  RACommon
 //
 //  Created by Richy on 5/12/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Richard Adem. All rights reserved.
+//
+//  richy486@gmail.com
+//  twitter.com/richy486
 //
 
 #import <UIKit/UIKit.h>

@@ -3,10 +3,14 @@
 //  RACommon
 //
 //  Created by Richy on 5/12/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Richard Adem. All rights reserved.
+//
+//  richy486@gmail.com
+//  twitter.com/richy486
 //
 
 #import "RAViewController.h"
+#import "RAVersion.h"
 
 @implementation RAViewController
 
@@ -31,9 +35,16 @@
     // e.g. self.myOutlet = nil;
 }
 
+BOOL firstRun = YES;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    if (firstRun)
+    {
+        firstRun = NO;
+        [[RAVersion alloc] initOnView:self.view];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -15,6 +15,7 @@
 		B9A3C1B3148C34C400100A6B /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */; };
 		B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1B5148C34C400100A6B /* RAViewController.m */; };
 		B9A3C1B9148C34C400100A6B /* RAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1B7148C34C400100A6B /* RAViewController.xib */; };
+		B9A3C1C6148C35AD00100A6B /* RAVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1C5148C35AD00100A6B /* RAVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		B9A3C1A2148C34C400100A6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9A3C1A4148C34C400100A6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9A3C1A6148C34C400100A6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B9A3C1AA148C34C400100A6B /* RACommon-Info.plist */ = {isa = PBXFileReference; path = "RACommon-Info.plist"; sourceTree = "<group>"; };
+		B9A3C1AA148C34C400100A6B /* RACommon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACommon-Info.plist"; sourceTree = "<group>"; };
 		B9A3C1AC148C34C400100A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9A3C1AE148C34C400100A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9A3C1B0148C34C400100A6B /* RACommon-Prefix.pch */ = {isa = PBXFileReference; path = "RACommon-Prefix.pch"; sourceTree = "<group>"; };
-		B9A3C1B1148C34C400100A6B /* RAAppDelegate.h */ = {isa = PBXFileReference; path = RAAppDelegate.h; sourceTree = "<group>"; };
+		B9A3C1B0148C34C400100A6B /* RACommon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACommon-Prefix.pch"; sourceTree = "<group>"; };
+		B9A3C1B1148C34C400100A6B /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
-		B9A3C1B4148C34C400100A6B /* RAViewController.h */ = {isa = PBXFileReference; path = RAViewController.h; sourceTree = "<group>"; };
+		B9A3C1B4148C34C400100A6B /* RAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
 		B9A3C1B5148C34C400100A6B /* RAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
 		B9A3C1B8148C34C400100A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RAViewController.xib; sourceTree = "<group>"; };
+		B9A3C1C4148C35AD00100A6B /* RAVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAVersion.h; path = Common/RAVersion.h; sourceTree = "<group>"; };
+		B9A3C1C5148C35AD00100A6B /* RAVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAVersion.m; path = Common/RAVersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +80,13 @@
 		B9A3C1A8148C34C400100A6B /* RACommon */ = {
 			isa = PBXGroup;
 			children = (
+				B9A3C1A9148C34C400100A6B /* Supporting Files */,
 				B9A3C1B1148C34C400100A6B /* RAAppDelegate.h */,
 				B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */,
 				B9A3C1B4148C34C400100A6B /* RAViewController.h */,
 				B9A3C1B5148C34C400100A6B /* RAViewController.m */,
 				B9A3C1B7148C34C400100A6B /* RAViewController.xib */,
-				B9A3C1A9148C34C400100A6B /* Supporting Files */,
+				B9A3C1C3148C359300100A6B /* Common */,
 			);
 			path = RACommon;
 			sourceTree = "<group>";
@@ -96,6 +100,15 @@
 				B9A3C1B0148C34C400100A6B /* RACommon-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9A3C1C3148C359300100A6B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3C1C4148C35AD00100A6B /* RAVersion.h */,
+				B9A3C1C5148C35AD00100A6B /* RAVersion.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +176,7 @@
 				B9A3C1AF148C34C400100A6B /* main.m in Sources */,
 				B9A3C1B3148C34C400100A6B /* RAAppDelegate.m in Sources */,
 				B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */,
+				B9A3C1C6148C35AD00100A6B /* RAVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
