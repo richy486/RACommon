@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9A3C1A3148C34C400100A6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3C1A2148C34C400100A6B /* UIKit.framework */; };
+		B9A3C1A5148C34C400100A6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3C1A4148C34C400100A6B /* Foundation.framework */; };
+		B9A3C1A7148C34C400100A6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A3C1A6148C34C400100A6B /* CoreGraphics.framework */; };
+		B9A3C1AD148C34C400100A6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1AB148C34C400100A6B /* InfoPlist.strings */; };
+		B9A3C1AF148C34C400100A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1AE148C34C400100A6B /* main.m */; };
+		B9A3C1B3148C34C400100A6B /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */; };
+		B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1B5148C34C400100A6B /* RAViewController.m */; };
+		B9A3C1B9148C34C400100A6B /* RAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1B7148C34C400100A6B /* RAViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9A3C19E148C34C400100A6B /* RACommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A3C1A2148C34C400100A6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9A3C1A4148C34C400100A6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9A3C1A6148C34C400100A6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9A3C1AA148C34C400100A6B /* RACommon-Info.plist */ = {isa = PBXFileReference; path = "RACommon-Info.plist"; sourceTree = "<group>"; };
+		B9A3C1AC148C34C400100A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9A3C1AE148C34C400100A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9A3C1B0148C34C400100A6B /* RACommon-Prefix.pch */ = {isa = PBXFileReference; path = "RACommon-Prefix.pch"; sourceTree = "<group>"; };
+		B9A3C1B1148C34C400100A6B /* RAAppDelegate.h */ = {isa = PBXFileReference; path = RAAppDelegate.h; sourceTree = "<group>"; };
+		B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
+		B9A3C1B4148C34C400100A6B /* RAViewController.h */ = {isa = PBXFileReference; path = RAViewController.h; sourceTree = "<group>"; };
+		B9A3C1B5148C34C400100A6B /* RAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		B9A3C1B8148C34C400100A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RAViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9A3C19B148C34C300100A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A3C1A3148C34C400100A6B /* UIKit.framework in Frameworks */,
+				B9A3C1A5148C34C400100A6B /* Foundation.framework in Frameworks */,
+				B9A3C1A7148C34C400100A6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9A3C193148C34C300100A6B = {
+			isa = PBXGroup;
+			children = (
+				B9A3C1A8148C34C400100A6B /* RACommon */,
+				B9A3C1A1148C34C400100A6B /* Frameworks */,
+				B9A3C19F148C34C400100A6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9A3C19F148C34C400100A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3C19E148C34C400100A6B /* RACommon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9A3C1A1148C34C400100A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3C1A2148C34C400100A6B /* UIKit.framework */,
+				B9A3C1A4148C34C400100A6B /* Foundation.framework */,
+				B9A3C1A6148C34C400100A6B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9A3C1A8148C34C400100A6B /* RACommon */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3C1B1148C34C400100A6B /* RAAppDelegate.h */,
+				B9A3C1B2148C34C400100A6B /* RAAppDelegate.m */,
+				B9A3C1B4148C34C400100A6B /* RAViewController.h */,
+				B9A3C1B5148C34C400100A6B /* RAViewController.m */,
+				B9A3C1B7148C34C400100A6B /* RAViewController.xib */,
+				B9A3C1A9148C34C400100A6B /* Supporting Files */,
+			);
+			path = RACommon;
+			sourceTree = "<group>";
+		};
+		B9A3C1A9148C34C400100A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3C1AA148C34C400100A6B /* RACommon-Info.plist */,
+				B9A3C1AB148C34C400100A6B /* InfoPlist.strings */,
+				B9A3C1AE148C34C400100A6B /* main.m */,
+				B9A3C1B0148C34C400100A6B /* RACommon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9A3C19D148C34C300100A6B /* RACommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A3C1BC148C34C400100A6B /* Build configuration list for PBXNativeTarget "RACommon" */;
+			buildPhases = (
+				B9A3C19A148C34C300100A6B /* Sources */,
+				B9A3C19B148C34C300100A6B /* Frameworks */,
+				B9A3C19C148C34C300100A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACommon;
+			productName = RACommon;
+			productReference = B9A3C19E148C34C400100A6B /* RACommon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9A3C195148C34C300100A6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B9A3C198148C34C300100A6B /* Build configuration list for PBXProject "RACommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9A3C193148C34C300100A6B;
+			productRefGroup = B9A3C19F148C34C400100A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9A3C19D148C34C300100A6B /* RACommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9A3C19C148C34C300100A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A3C1AD148C34C400100A6B /* InfoPlist.strings in Resources */,
+				B9A3C1B9148C34C400100A6B /* RAViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9A3C19A148C34C300100A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A3C1AF148C34C400100A6B /* main.m in Sources */,
+				B9A3C1B3148C34C400100A6B /* RAAppDelegate.m in Sources */,
+				B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9A3C1AB148C34C400100A6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A3C1AC148C34C400100A6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9A3C1B7148C34C400100A6B /* RAViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A3C1B8148C34C400100A6B /* en */,
+			);
+			name = RAViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9A3C1BA148C34C400100A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9A3C1BB148C34C400100A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9A3C1BD148C34C400100A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACommon/RACommon-Prefix.pch";
+				INFOPLIST_FILE = "RACommon/RACommon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9A3C1BE148C34C400100A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACommon/RACommon-Prefix.pch";
+				INFOPLIST_FILE = "RACommon/RACommon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9A3C198148C34C300100A6B /* Build configuration list for PBXProject "RACommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A3C1BA148C34C400100A6B /* Debug */,
+				B9A3C1BB148C34C400100A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A3C1BC148C34C400100A6B /* Build configuration list for PBXNativeTarget "RACommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A3C1BD148C34C400100A6B /* Debug */,
+				B9A3C1BE148C34C400100A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9A3C195148C34C300100A6B /* Project object */;
+}
