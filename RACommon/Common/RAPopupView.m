@@ -18,7 +18,6 @@
 
 @implementation RAPopupView
 @synthesize viewHolder = _viewHolder;
-@synthesize box = _box;
 @synthesize innerBox = _innerBox;
 @synthesize btnClose = _btnClose;
 @synthesize backgroundImageView = _backgroundImageView;
@@ -64,29 +63,25 @@ NSString *kPopupCloseNotification = @"kPopupCloseNotification";
     [super viewWillAppear:animated];
     
     self.innerBox.layer.cornerRadius = 10.0;
-    self.box.layer.cornerRadius = 15.0;
+    self.innerBox.layer.borderWidth = 5.0;
+    self.innerBox.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.innerBox addSubview:self.contentView];
     
     CGFloat boxW = self.contentView.frame.size.width + 10.0;
     CGFloat boxH = self.contentView.frame.size.height + 10.0;
     
-    [self.box setFrame:CGRectMake((self.view.frame.size.width / 2) - (boxW / 2)
+    [self.innerBox setFrame:CGRectMake((self.view.frame.size.width / 2) - (boxW / 2)
                                   , (self.view.frame.size.height / 2) - (boxH / 2)
                                   , boxW
                                   , boxH)];
-    
-    [self.innerBox setFrame:CGRectMake(5.0
-                                  , 5.0
-                               , boxW - 10.0
-                               , boxH - 10.0)];
     
     [self.backgroundImageView setFrame:CGRectMake(0.0
                                                   , 0.0
                                                   , boxW - 10.0
                                                   , boxH - 10.0)];
     
-    [self.btnClose setFrame:CGRectMake(CGRectGetMaxX(self.box.frame) - (self.btnClose.frame.size.width / 2)
-                                       , self.box.frame.origin.y - (self.btnClose.frame.size.height / 2)
+    [self.btnClose setFrame:CGRectMake(CGRectGetMaxX(self.innerBox.frame) - (self.btnClose.frame.size.width / 2)
+                                       , self.innerBox.frame.origin.y - (self.btnClose.frame.size.height / 2)
                                        , self.btnClose.frame.size.width
                                        , self.btnClose.frame.size.height)];
     
@@ -107,7 +102,6 @@ NSString *kPopupCloseNotification = @"kPopupCloseNotification";
 - (void)viewDidUnload
 {
     [self setViewHolder:nil];
-    [self setBox:nil];
     [self setTitle:nil];
     [self setBtnClose:nil];
     [self setInnerBox:nil];
