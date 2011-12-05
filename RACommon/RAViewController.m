@@ -79,12 +79,15 @@ BOOL firstRun = YES;
 
 - (IBAction)touchUpIn_btnPopup:(id)sender
 {
-    UIView *popupContent = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 270, 150)];
-    UILabel *popupText = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 200, 100)];
+    UIView *popupContent = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    [popupContent setBackgroundColor:[UIColor orangeColor]];
+    UILabel *popupText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
     [popupText setText:@"Popup!"];
+    [popupText setBackgroundColor:[UIColor clearColor]];
+    [popupText setTextAlignment:UITextAlignmentCenter];
     [popupContent addSubview:popupText];
     
-    RAPopupView *popup = [[RAPopupView alloc] initWithContentView:popupContent];
+    RAPopupView *popup = [[RAPopupView alloc] initWithContentView:popupContent andSuperViewFrame:self.view.frame];
     [self setPopupView:popup];
 
     [self.view addSubview:self.popupView.view];

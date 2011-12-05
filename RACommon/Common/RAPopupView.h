@@ -15,11 +15,10 @@ extern NSString *kPopupCloseNotification;
 
 @interface RAPopupView : UIViewController <UITextFieldDelegate>
 
-@property (retain, nonatomic) IBOutlet UIView *viewHolder;
-@property (retain, nonatomic) IBOutlet UIView *innerBox;
-@property (retain, nonatomic) IBOutlet UIButton *btnClose;
-@property (retain, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (retain, nonatomic) UIView *viewHolder;
+@property (retain, nonatomic) UIView *innerBox;
+@property (retain, nonatomic) UIButton *btnClose;
 
-- (id) initWithContentView:(UIView*) contentView;
+- (id) initWithContentView:(UIView*) contentView andSuperViewFrame:(CGRect) superViewFrame;
 - (IBAction)touchUpIn_btnClose:(id)sender;
 @end
