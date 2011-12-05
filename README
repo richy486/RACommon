@@ -1,0 +1,4 @@
+Some common classes
+
+Version - display the version of the app in a window that disappears after a little while.
+PopupView - a popup view with a close button, displays a UIView thats passed in on init
