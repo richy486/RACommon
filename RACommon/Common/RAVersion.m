@@ -50,22 +50,25 @@
         
         [superView addSubview:self];
         
-        [UIView animateWithDuration: 0.3
-                              delay: 1.0
-                            options: UIViewAnimationOptionCurveEaseIn
-                         animations:^{
-                             [self setAlpha:1.0];
-                         }
-                         completion:^(BOOL finished){
-                             [NSTimer scheduledTimerWithTimeInterval:3
-                                                              target:self 
-                                                            selector:@selector(removeView) 
-                                                            userInfo:nil 
-                                                             repeats:NO];
-                         }];
-        
     }
     return self;
+}
+
+- (void) show
+{
+    [UIView animateWithDuration: 0.3
+                          delay: 1.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         [self setAlpha:1.0];
+                     }
+                     completion:^(BOOL finished){
+                         [NSTimer scheduledTimerWithTimeInterval:3
+                                                          target:self 
+                                                        selector:@selector(removeView) 
+                                                        userInfo:nil 
+                                                         repeats:NO];
+                     }];
 }
 
 - (void) removeView

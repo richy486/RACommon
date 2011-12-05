@@ -13,4 +13,5 @@
 
 @interface RAVersion : UIView
 - (id) initOnView:(UIView*) superView;
+- (void) show;
 @end

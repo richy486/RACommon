@@ -10,9 +10,16 @@
 //
 
 #import "RAViewController.h"
+#import "RAPopupView.h"
 #import "RAVersion.h"
 
+@interface RAViewController()
+@property (nonatomic, strong) RAPopupView *popupView;
+@end
+
 @implementation RAViewController
+
+@synthesize popupView = _popupView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -33,6 +40,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    [self setPopupView:nil];
 }
 
 BOOL firstRun = YES;
@@ -43,7 +51,8 @@ BOOL firstRun = YES;
     if (firstRun)
     {
         firstRun = NO;
-        [[RAVersion alloc] initOnView:self.view];
+        RAVersion *version = [[RAVersion alloc] initOnView:self.view];
+        [version show];
     }
 }
 
@@ -68,4 +77,17 @@ BOOL firstRun = YES;
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)touchUpIn_btnPopup:(id)sender
+{
+    UIView *popupContent = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 270, 150)];
+    UILabel *popupText = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 200, 100)];
+    [popupText setText:@"Popup!"];
+    [popupContent addSubview:popupText];
+    
+    RAPopupView *popup = [[RAPopupView alloc] initWithContentView:popupContent];
+    [self setPopupView:popup];
+
+    [self.view addSubview:self.popupView.view];
+    
+}
 @end

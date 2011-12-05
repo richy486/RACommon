@@ -13,4 +13,5 @@
 
 @interface RAViewController : UIViewController
 
+- (IBAction)touchUpIn_btnPopup:(id)sender;
 @end

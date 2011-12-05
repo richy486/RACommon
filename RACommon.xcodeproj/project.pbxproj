@@ -16,6 +16,10 @@
 		B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1B5148C34C400100A6B /* RAViewController.m */; };
 		B9A3C1B9148C34C400100A6B /* RAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1B7148C34C400100A6B /* RAViewController.xib */; };
 		B9A3C1C6148C35AD00100A6B /* RAVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1C5148C35AD00100A6B /* RAVersion.m */; };
+		B9A3C1CE148C383200100A6B /* RAPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A3C1CC148C383200100A6B /* RAPopupView.m */; };
+		B9A3C1CF148C383200100A6B /* RAPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1CD148C383200100A6B /* RAPopupView.xib */; };
+		B9A3C1D2148C39A700100A6B /* RAPopupViewBtnClose.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1D0148C39A700100A6B /* RAPopupViewBtnClose.png */; };
+		B9A3C1D3148C39A700100A6B /* RAPopupViewBtnClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A3C1D1148C39A700100A6B /* RAPopupViewBtnClose@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,11 @@
 		B9A3C1B8148C34C400100A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RAViewController.xib; sourceTree = "<group>"; };
 		B9A3C1C4148C35AD00100A6B /* RAVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAVersion.h; path = Common/RAVersion.h; sourceTree = "<group>"; };
 		B9A3C1C5148C35AD00100A6B /* RAVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAVersion.m; path = Common/RAVersion.m; sourceTree = "<group>"; };
+		B9A3C1CB148C383200100A6B /* RAPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAPopupView.h; path = Common/RAPopupView.h; sourceTree = "<group>"; };
+		B9A3C1CC148C383200100A6B /* RAPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAPopupView.m; path = Common/RAPopupView.m; sourceTree = "<group>"; };
+		B9A3C1CD148C383200100A6B /* RAPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAPopupView.xib; path = Common/RAPopupView.xib; sourceTree = "<group>"; };
+		B9A3C1D0148C39A700100A6B /* RAPopupViewBtnClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RAPopupViewBtnClose.png; path = Common/RAPopupViewBtnClose.png; sourceTree = "<group>"; };
+		B9A3C1D1148C39A700100A6B /* RAPopupViewBtnClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RAPopupViewBtnClose@2x.png"; path = "Common/RAPopupViewBtnClose@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,11 @@
 		B9A3C1C3148C359300100A6B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B9A3C1CB148C383200100A6B /* RAPopupView.h */,
+				B9A3C1CC148C383200100A6B /* RAPopupView.m */,
+				B9A3C1CD148C383200100A6B /* RAPopupView.xib */,
+				B9A3C1D0148C39A700100A6B /* RAPopupViewBtnClose.png */,
+				B9A3C1D1148C39A700100A6B /* RAPopupViewBtnClose@2x.png */,
 				B9A3C1C4148C35AD00100A6B /* RAVersion.h */,
 				B9A3C1C5148C35AD00100A6B /* RAVersion.m */,
 			);
@@ -163,6 +177,9 @@
 			files = (
 				B9A3C1AD148C34C400100A6B /* InfoPlist.strings in Resources */,
 				B9A3C1B9148C34C400100A6B /* RAViewController.xib in Resources */,
+				B9A3C1CF148C383200100A6B /* RAPopupView.xib in Resources */,
+				B9A3C1D2148C39A700100A6B /* RAPopupViewBtnClose.png in Resources */,
+				B9A3C1D3148C39A700100A6B /* RAPopupViewBtnClose@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +194,7 @@
 				B9A3C1B3148C34C400100A6B /* RAAppDelegate.m in Sources */,
 				B9A3C1B6148C34C400100A6B /* RAViewController.m in Sources */,
 				B9A3C1C6148C35AD00100A6B /* RAVersion.m in Sources */,
+				B9A3C1CE148C383200100A6B /* RAPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
