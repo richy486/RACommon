@@ -1,5 +1,5 @@
 //
-//  Popup.h
+//  RAPopup.h
 //  RACommon
 //
 //  Created by Richard Adem on 24/10/11.

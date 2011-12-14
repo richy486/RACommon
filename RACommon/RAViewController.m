@@ -12,6 +12,7 @@
 #import "RAViewController.h"
 #import "RAPopupView.h"
 #import "RAVersion.h"
+#import "RADoubleSlide.h"
 
 @interface RAViewController()
 @property (nonatomic, strong) RAPopupView *popupView;
@@ -33,6 +34,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    RADoubleSlide *doubleSlide = [[RADoubleSlide alloc] initWithFrame:CGRectMake(0.0, 200.0, self.view.frame.size.width, 50.0)];
+    [doubleSlide addTarget:self action:@selector(valueChanged_doubleSlide:) forControlEvents:UIControlEventValueChanged];
+    [doubleSlide setTag:200];
+    //[doubleSlide setLeftButtonImage:handle];
+    //[doubleSlide setRightButtonImage:handle];
+    //[doubleSlide setSliderEmptyImage:sliderBg];
+    //[doubleSlide setSLiderFullImage:sliderFill];
+    [self.view addSubview:doubleSlide];
+    //[doubleSlide release];
 }
 
 - (void)viewDidUnload
@@ -41,6 +52,8 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     [self setPopupView:nil];
+    
+    
 }
 
 BOOL firstRun = YES;
@@ -92,5 +105,15 @@ BOOL firstRun = YES;
 
     [self.view addSubview:self.popupView.view];
     
+}
+
+- (void) valueChanged_doubleSlide:(id) sender
+{
+    RADoubleSlide *doubleSlide = (RADoubleSlide*)sender;
+    
+    CGFloat leftPos = doubleSlide.leftPos;
+    CGFloat rightPos = doubleSlide.rightPos;
+    
+    NSLog(@"Double slide leftPos: %.02f, rightPos: %.02f", leftPos, rightPos);
 }
 @end

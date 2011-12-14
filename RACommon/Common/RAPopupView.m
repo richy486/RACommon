@@ -1,5 +1,5 @@
 //
-//  Popup.m
+//  RAPopup.m
 //  RACommon
 //
 //  Created by Richard Adem on 24/10/11.
