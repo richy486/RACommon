@@ -30,7 +30,7 @@ NSString *kPopupCloseNotification = @"kPopupCloseNotification";
     if (self)
     {
         [self setContentView:contentView];
-        [self.view setFrame: CGRectMake(0, 0, 320, 480)];
+        [self.view setFrame: CGRectMake(0, 0, superViewFrame.size.width, superViewFrame.size.height)];
     }
     return self;
 }
